@@ -1,4 +1,5 @@
 import csm from "../assets/csm.png"
+import ecobinpic from "../assets/ecobinpic.webp"
 import { useRef, useEffect, useState } from "react";
 import { ChevronDown, ChevronLeft, ChevronRight, CodeXml, ExternalLink, Info, Layers, Link} from "lucide-react";
 import { useGSAP } from "@gsap/react";

@@ -1,7 +1,7 @@
 import avl_wip from "../assets/avl_wip.png"
-import LiliesOfTheField from "../assets/LiliesOfTheField.png"
-import Psalm8_4 from "../assets/Psalm8_4.png"
-import NowISee from "../assets/NowISee.png"
+import LiliesOfTheField from "../assets/LiliesOfTheField.webp"
+import Psalm8_4 from "../assets/Psalm8_4.webp"
+import NowISee from "../assets/NowISee.webp"
 import { Brush, ChevronLeft, ChevronRight, ChevronUp, House, HouseHeart, Pencil, PencilRuler, Scroll, ScrollText, Tablet, X, Send, ChevronDown} from "lucide-react";
 import { FaArtstation, FaBluesky, FaInstagram, FaPinterest } from "react-icons/fa6";
 import { useState, useRef, useEffect } from "react";

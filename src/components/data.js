@@ -1,8 +1,7 @@
 import sdovalsite from "../assets/sdovalsite.png"
-import csm from "../assets/csm.png"
-import dashboard from "../assets/dashboard.png";
-import flakesdemo from "../assets/flakesdemo.png";
-import ecobinpic from "../assets/ecobinpic.png"
+import dashboard from "../assets/dashboard.webp";
+import flakesdemo from "../assets/flakesdemo.webp";
+import ecobinpic from "../assets/ecobinpic.webp"
 
 
 export default [
