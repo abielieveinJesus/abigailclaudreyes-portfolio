@@ -570,7 +570,7 @@ export const Illustrations = () => {
                     </div>
 
                        {/*ART SOCIALS MOBILE*/}
-             <div id="art_socials_m" className="art_socials_m flex absolute items-center justify-center -bottom-85 -left-3">
+             <div id="art_socials_m" className="art_socials_m flex sm:hidden absolute items-center justify-center -bottom-85 -left-3">
                 <div id="art_more" className=" flex flex-row gap-7 items-center justify-center w-50 h-13 sm:w-80 sm:h-17 rounded-full backdrop-blur-xl bg-[#dfd9df]/30  shadow-lg shadow-white border-[2px] border-t-white border-l-white/50 border-r-white/50 border-b-white/20 ">
                     <a target="_blank" href="https://bsky.app/profile/abiereverie.bsky.social"  className="cursor-pointer">
                             <TbBrandBluesky size={30} className="text-white/85 drop-shadow-md drop-shadow-[#360c3673]/35 hover:text-white hover:drop-shadow-md hover:drop-shadow-white transition-all duration-400 cursor-pointer"></TbBrandBluesky>
