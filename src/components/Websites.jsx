@@ -1,3 +1,4 @@
+import csm from "../assets/csm.png"
 import { useRef, useEffect, useState } from "react";
 import { ChevronDown, ChevronLeft, ChevronRight, CodeXml, ExternalLink, Info, Layers, Link} from "lucide-react";
 import { useGSAP } from "@gsap/react";
@@ -18,7 +19,7 @@ const tech4 ="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-ic
 const tech5 ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/615px-Vitejs-logo.svg.png?20220412224743";
 
 const img1 ="https://media3.giphy.com/media/0kM3axa2wdtgnmXQES/giphy.gif";
-const img2 ="src/assets/csm.png";
+const img2 =csm
 const img3 ="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmlpdGhhdWIzYmRlMXlodWFvdGt2YTdjbjN2OWtlNDdua3prNnFociZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CjQSYDGguCRjz1pUpT/giphy.gif";
 
 const link1 = "https://abielieveinjesus.github.io/milk-hero-ui"
@@ -475,9 +476,9 @@ const WorksCarousel = () => {
 
         <div className="ImageSlider z-1 flex items-center justify center px-10 py-10  md:scale-90 lg:scale-100">
             {/*Scroll prompt*/}
-            <div id="scrollprompt" className="flex absolute flex-col items-center justify-center -mt-60  cursor-context-menu opacity-40 left-0 right-0 scale-90">
+            <div id="scrollprompt" className="flex absolute flex-col items-center justify-center -mt-70  cursor-context-menu opacity-30 left-0 right-0 scale-90">
                 <h6 className="hidden items-center justify-center font-Antic text-xs md:text-[13px] text-[#360C36]/50 tracking-[3px] delay-100">Scroll down</h6>
-                <ChevronDown size={25} className="animate-bounce block items-center justify-center mt-3 text-[#360c368d]  border rounded-full h-20 w-10"></ChevronDown>
+                <ChevronDown size={25} className="animate-bounce block items-center justify-center mt-3 text-[#360c368d]/50  border rounded-full h-20 w-10"></ChevronDown>
             </div>
             <div className="ImageSliderContainer w-auto h-full sm:pt-10  md:pt-20">
                  <div id="dtrigger" className="z-0 opacity-0 -top-30 absolute flex items-center justify-center h-10 w-full bg-black"></div>

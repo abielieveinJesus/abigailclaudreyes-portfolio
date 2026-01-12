@@ -1,3 +1,7 @@
+import avl_wip from "../assets/avl_wip.png"
+import LiliesOfTheField from "../assets/LiliesOfTheField.png"
+import Psalm8_4 from "../assets/Psalm8_4.png"
+import NowISee from "../assets/NowISee.png"
 import { Brush, ChevronLeft, ChevronRight, ChevronUp, House, HouseHeart, Pencil, PencilRuler, Scroll, ScrollText, Tablet, X, Send, ChevronDown} from "lucide-react";
 import { FaArtstation, FaBluesky, FaInstagram, FaPinterest } from "react-icons/fa6";
 import { useState, useRef, useEffect } from "react";
@@ -23,10 +27,10 @@ import { LuGalleryHorizontal } from "react-icons/lu";
 
 gsap.registerPlugin(ScrollTrigger)
 
-const art1 ="src/assets/avl_wip.png";
-const art2 ="https://i.pinimg.com/736x/04/6c/31/046c3100b546fe2694385c4b9d9bf704.jpg";
-const art3 ="src/assets/Psalm 8_4 static.png";
-const art4="https://i.pinimg.com/736x/17/42/8c/17428ca986de3b8f36da9982a51b2eba.jpg";
+const art1 =avl_wip;
+const art2 =LiliesOfTheField;
+const art3 =Psalm8_4;
+const art4=NowISee;
 
 const artarray = [art1,art2,art3,art4];
 

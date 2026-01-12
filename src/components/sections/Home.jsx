@@ -1,11 +1,15 @@
-
+import Logov2 from "../../assets/Logov2.svg"
 import { Brush, ChevronDown, CodeXml, LayoutTemplate } from "lucide-react";
 import Spline from '@splinetool/react-spline';
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
+
 export const Home = () => {
+
+     const abie_logo = Logov2
+     
 
     return <section id="home" className="min-h-screen w-full flex flex-col items-center justify-center px-40 py-40 relative bg-[#eae6ea]">
            
@@ -92,9 +96,9 @@ export const Home = () => {
 
                  {/*A b i e logo*/}   
                     <div id="abwie-wogo-uwu"  className="flex items-center justify-center w-70 sm:w-120">
-                        <img src="src/assets/Logov2.svg" className="flex"></img>
-                        <img src="src/assets/Logov2.svg" className="absolute flex w-70 sm:w-120 blur-md animate-[pulse_3s_ease-in-out_infinite]"></img>
-                        <img src="src/assets/Logov2.svg" className="absolute flex w-70 sm:w-120 blur-xl animate-[pulse_4s_ease-in-out_infinite]"></img>
+                        <img src={abie_logo} className="flex"></img>
+                        <img src={abie_logo} className="absolute flex w-70 sm:w-120 blur-md animate-[pulse_3s_ease-in-out_infinite]"></img>
+                        <img src={abie_logo} className="absolute flex w-70 sm:w-120 blur-xl animate-[pulse_4s_ease-in-out_infinite]"></img>
                     </div>
 
                 {/*Tagline*/}

@@ -1,9 +1,10 @@
+import abiepic1 from "../../assets/abiepic1.png"
+import Logo from "../../assets/Logo.svg"
 import { User, InfoIcon, Instagram, Mail, MessageCircleMore, CodeXml, FileText, X, Send, ChevronDown } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-
 import emailjs from 'emailjs-com';
 import Spline from '@splinetool/react-spline';
 import { motion } from "motion/react";
@@ -17,6 +18,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const About = () => {
   const scrollRef = useRef();
+
+  const abie_pic = abiepic1
+  const abie_logo_icon = Logo
 
    
    useGSAP(() => {
@@ -301,9 +305,9 @@ const [ContactFormOpen, setContactFormOpen] = useState(false);
               {/*Left side*/}
               <div id="abie-logo-round" onClick={LogoClick} className="absolute flex items-center justify-center pr-82 top-97 sm:top-103 sm:pr-140 md:pr-170 cursor-pointer ">
                <div className="z-2 absolute  w-15 h-15 sm:h-30 sm:w-30 rounded-full backdrop-blur-xl bg-transparent  shadow-sm shadow-white border-[1px] border-t-white border-l-white/20 border-r-white/20 border-b-white/0">
-                <img src="src/assets/Logo.svg"className="absolute h-full w-full"></img>
-                <img src="src/assets/Logo.svg"className="absolute h-full w-full opacity-100 blur-xs transition-all duration-500 animate-pulse"></img>
-                <img src="src/assets/Logo.svg"className="absolute h-full w-full opacity-50 blur-md hover:opacity-100 transition-opacity duration-300"></img>
+                <img src={abie_logo_icon} className="absolute h-full w-full"></img>
+                <img src={abie_logo_icon} className="absolute h-full w-full opacity-100 blur-xs transition-all duration-500 animate-pulse"></img>
+                <img src={abie_logo_icon} className="absolute h-full w-full opacity-50 blur-md hover:opacity-100 transition-opacity duration-300"></img>
                </div>
                <div className="z-1 absolute  w-15 h-15 sm:h-30 sm:w-30 rounded-full backdrop-blur-xl bg-transparent border-1 sm:border-1 border-t-white border-l-white/20 border-r-white/20 border-b-white/0 blur-[2px] shadow-lg shadow-[#ffffff] drop-shadow-xl drop-shadow-[#3a0b3a51]  "></div>
               </div>
@@ -350,7 +354,7 @@ const [ContactFormOpen, setContactFormOpen] = useState(false);
                   <div className="z-1 flex-col flex items-center justify-center sm:-mt-10">
                   
                       <div className=" h-50 w-50 rounded-full  bg-transparent shadow-xl shadow-white/70  drop-shadow-xl drop-shadow-[#360C36]/30 overflow-clip"> 
-                        <img src="src/assets/abiepic1.png" className="object-cover w-full rounded-full -mt-2 pointer-events-none "></img>
+                        <img src={abie_pic} className="object-cover w-full rounded-full -mt-2 pointer-events-none "></img>
                       </div>
                       
                       <span className="z-1 absolute text-white text-2xl tracking-[1px]  mt-50 blur-xs drop-shadow-md drop-shadow-white opacity-10 hover:opacity-100 transition-all duration-400">Abigail C. Reyes</span>
