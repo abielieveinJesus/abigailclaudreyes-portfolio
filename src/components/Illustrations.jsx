@@ -987,7 +987,7 @@ export const Illustrations = () => {
                <a id="vgen_btn" href="https://vgen.co/abiereverie" target="_blank" className="z-3 absolute flex items-center justify-center bottom-40 sm:-bottom-17 md:-bottom-8 cursor-pointer left-0 right-0 lg:scale-110 ]">
                     <button className="z-1 absolute flex items-center justify-center text-[#360C36] hover:text-white rounded-full h-15 w-57.5 sm:h-13 sm:w-60  px-3.5 bg-white/20 shadow-xl shadow-white/75 drop-shadow-2xl drop-shadow-[#350b354f] border-[1.5px] border-t-white border-l-white/50 border-r-white/50 border-b-white/25 hover:bg-transparent  hover:shadow-white hover:drop-shadow-xs hover:drop-shadow-white/10 transition-all duration-700 cursor-pointer">
                         <img src="https://help.vgen.co/hc/article_attachments/13004231445911" className="sm:h-10  h-10 mr-1"></img>
-                        <p className="text-[15px] sm:text-[15px]  px-1 tracking-[3px]">Commission Me?</p>
+                        <p className="text-[15px] sm:text-[15px]  px-1 tracking-[3px]">I'm on VGen!</p>
                     </button>
 
                     <button className="z-0 absolute flex items-center justify-center rounded-full h-10 w-54 sm:h-10 sm:w-35 md:h-9 md:w-40 lg:h-10 lg:w-50  px-3.5 text-[#ffffff] bg-[#ff1f62ac]/50 blur-md shadow-lg shadow-white border-[5px] border-white animate-[pulse_3s_ease-in-out_inifinite]">

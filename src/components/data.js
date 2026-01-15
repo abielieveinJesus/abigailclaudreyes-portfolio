@@ -8,7 +8,7 @@ export default [
     {
         img:sdovalsite,
         title:'DepEd Val. Home',
-        desc:'A Home page for the Deped Valenzuela website.',
+        desc:'Deped Valenzuela website prototype.',
         stack:'HTML ✦ CSS ✦ JS',
         link:'https://sites.google.com/view/deped-valenzuela-main-page/sdo-valenzuela-home',
         btnlbl:'Visit'
