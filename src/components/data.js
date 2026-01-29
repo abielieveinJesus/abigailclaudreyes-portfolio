@@ -19,7 +19,7 @@ export default [
         desc:'A Home page for LUV — An anti-AI mimicry software (A concept.)',
         stack:'React ✦ Tailwind ✦ Spline',
         link:"https://abielieveinjesus.github.io/luv-home/",
-        btnlbl:'See Design'
+        btnlbl:'Visit'
 
     },
      {
