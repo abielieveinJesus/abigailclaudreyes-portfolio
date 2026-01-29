@@ -1,4 +1,5 @@
 import csm from "../assets/csm.png"
+import dashboard1 from "../assets/dashboard1.webp"
 import ecobinpic from "../assets/ecobinpic.webp"
 import { useRef, useEffect, useState } from "react";
 import { ChevronDown, ChevronLeft, ChevronRight, CodeXml, ExternalLink, Info, Layers, Link} from "lucide-react";
@@ -19,57 +20,56 @@ const tech3 ="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind
 const tech4 ="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png?20220125121207";
 const tech5 ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/615px-Vitejs-logo.svg.png?20220412224743";
 
-const img1 ="https://media3.giphy.com/media/0kM3axa2wdtgnmXQES/giphy.gif";
-const img2 =csm
-const img3 ="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmlpdGhhdWIzYmRlMXlodWFvdGt2YTdjbjN2OWtlNDdua3prNnFociZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CjQSYDGguCRjz1pUpT/giphy.gif";
+const img1 =dashboard1
+const img2 ="https://media3.giphy.com/media/0kM3axa2wdtgnmXQES/giphy.gif";
+const img3 =csm
 
-const link1 = "https://abielieveinjesus.github.io/milk-hero-ui"
-const link2 = "https://sites.google.com/view/deped-val-csm-site/guest";
-const link3 = "https://abielieveinjesus.github.io/luv-home/"
+const link1 = "https://lookerstudio.google.com/u/0/reporting/ab6e9eae-e37a-4384-b52e-dc8cb3927bc8/page/uNlyE"
+const link2 =" https://abielieveinjesus.github.io/milk-hero-ui/";
+const link3 = "https://sites.google.com/view/deped-val-csm-site/guest";
 
 const vid1 = null;
 const vid2 = null;
 const vid3 = "https://youtu.be/ksEgkd_k-hQ";
 
 
-const cinfo1 =<p>A Hero Section for Milk — A Bible study board web app. (Web App in Planning stage.)</p>;
-const cinfo2 =<p>The Client Satisfaction Measuring System for DepEd Valenzuela. I designed the banner too!</p>;
-const cinfo3 =<p>A Home page for LUV — An anti-AI mimicry software (A concept.)</p>;
+const cinfo1 =<p>A data dashboard for DepEd Valenzuela's CSM.</p>;
+const cinfo2 =<p>A Hero Section for Milk — A Bible study board web app. (Web App in Planning stage.)</p>;
+const cinfo3 =<p>Client Satisfaction Measurement System (CSM) for DepEd Valenzuela.</p>;
 
 const ctitle1 =<p>SDO Valenzuela Website.</p>;
 const ctitle2 =<p>Client Satisfaction Measurement System</p>;
 const ctitle3 =<p>Client Satisfaction Measurement Dashboard</p>;
 
 
-const tech31 ="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/768px-Tailwind_CSS_Logo.svg.png?20230715030042";
-const tech32 ="https://upload.wikimedia.org/wikipedia/commons/4/47/Google_Sites_%282014-2020%29.svg"
-const tech33 ="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/768px-Tailwind_CSS_Logo.svg.png?20230715030042";
+const tech31 ="https://upload.wikimedia.org/wikipedia/commons/4/47/Google_Sites_%282014-2020%29.svg"
+const tech32 ="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/768px-Tailwind_CSS_Logo.svg.png?20230715030042";
+const tech33 ="https://upload.wikimedia.org/wikipedia/commons/4/47/Google_Sites_%282014-2020%29.svg"
+
+const tech41 ="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Apps_Script.svg/960px-Google_Apps_Script.svg.png";
+const tech42 ="https://cdn.brandfetch.io/idZHcZ_i7F/w/320/h/320/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B"
+const tech43 ="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Apps_Script.svg/960px-Google_Apps_Script.svg.png";
 
 
-const tech41 ="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/779px-Vitejs-logo.svg.png";
-const tech42 ="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Apps_Script.svg/960px-Google_Apps_Script.svg.png";
-const tech43 ="https://cdn.brandfetch.io/idZHcZ_i7F/w/320/h/320/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B";
-
-
-const tech51 ="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png?20220125121207";
-const tech52 ="https://www.svgrepo.com/show/354012/looker-icon.svg";
-const tech53 ="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png?20220125121207";
+const tech51 ="https://www.svgrepo.com/show/354012/looker-icon.svg";
+const tech52 ="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/768px-React-icon.svg.png?20220125121207";
+const tech53 ="https://www.svgrepo.com/show/354012/looker-icon.svg";
 
 //gsap
-const tech61 ="data:image/png;base64,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";
-const tech62 ="https://cdn.brandfetch.io/idEX_duTsQ/w/120/h/120/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
-const tech63 ="data:image/png;base64,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";
+const tech61 ="https://cdn.brandfetch.io/idEX_duTsQ/w/120/h/120/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
+const tech62 ="data:image/png;base64,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";
+const tech63 ="https://cdn.brandfetch.io/idEX_duTsQ/w/120/h/120/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
 
 
 //spline
-const tech71 ="https://cdn.brandfetch.io/idZ_aiFAYa/w/128/h/128/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B";
-const tech72 =null
-const tech73 ="https://cdn.brandfetch.io/idZ_aiFAYa/w/128/h/128/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B";
+const tech71 =null;
+const tech72 ="https://cdn.brandfetch.io/idZ_aiFAYa/w/128/h/128/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B";
+const tech73 =null;
 
 //motion
-const tech81 ="https://cdn.brandfetch.io/idDJv1mfrb/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B";
-const tech82 =null
-const tech83 ="https://cdn.brandfetch.io/idDJv1mfrb/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B";
+const tech81 =null
+const tech82 ="https://cdn.brandfetch.io/idDJv1mfrb/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B";
+const tech83 =null
 
 const tech3array = [tech31,tech32,tech33,]
 const tech4array = [tech41,tech42,tech43,]
@@ -896,7 +896,7 @@ export const Websites = () => {
                         {data.map((d) => {
                             return(
                                   
-                                <motion.div key={d.img} className="item flex items-center justify-center w-50 h-70  md:h-85 md:w-58 rounded-4xl shadow-white/10  shadow-xs drop-shadow-xl  bg-white  hover:shadow-2xl hover:shadow-white transition-all duration-500 overflow-clip">
+                                <motion.div key={d.img} className="item flex items-center justify-center w-50 h-70  md:h-85 md:w-58 rounded-4xl shadow-white/10  shadow-xs drop-shadow-xl  bg-[#261426]  hover:shadow-2xl hover:shadow-white transition-all duration-500 overflow-clip">
                                       
                                         <div className="absolute bottom-15 sm:bottom-17 left-0 m-4 pl-1 pointer-events-none ">
                                    
@@ -917,7 +917,7 @@ export const Websites = () => {
                                         </a>
                                      </div>
                                      
-                                    <img src={d.img} className="w-full h-full object-cover pointer-events-none "></img>
+                                    <img src={d.img} className="w-full h-full object-cover pointer-events-none bg-[#360C36] mask-b-from-25% mask-b-to-70% "></img>
                                 </motion.div>
                             );
                         })}
