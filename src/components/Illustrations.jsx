@@ -499,7 +499,7 @@ export const Illustrations = () => {
 
                 {/*Terms of Service*/}
                 
-                    <div id="TOSbtn" className="z-3 stagger-scls flex flex-row items-center ">
+                    <div id="TOSbtn" className="z-3 stagger-scls flex flex-row items-center hidden ">
                     <button id="abiereverie"  className="flex items-center px-1 text-center text-[1px] md:tracking-[5px] sm:tracking-[3px] sm:text-[10px] md:text-xs lg:text-sm lg:tracking-[7px] text-[#360C36]/0 sm:text-[#360C36]">
                         
                     
@@ -549,8 +549,8 @@ export const Illustrations = () => {
                     </div>
                     </div>
 
-                {/*ART SOCIALS*/}
-                    <div id="art_socials" className="hidden sm:flex items-center">
+                {/*ART SOCIALS Desktop*/}
+                    <div id="art_socials" className="hidden  items-center">
                     <div id="art_more" className=" flex flex-row gap-5 items-center justify-center w-60 h-15 sm:w-43 sm:h-15 rounded-full  backdrop-blur-xl bg-[#dfd9df]/5  shadow-lg shadow-white border-[2px] border-t-white/90 border-l-white/50 border-r-white/50 border-b-white/20 ">
                         
                         <a target="_blank" href="https://bsky.app/profile/abiereverie.bsky.social"  className="cursor-pointer">
@@ -570,7 +570,7 @@ export const Illustrations = () => {
                     </div>
 
                        {/*ART SOCIALS MOBILE*/}
-             <div id="art_socials_m" className="art_socials_m flex sm:hidden absolute items-center justify-center -bottom-85 -left-3">
+             <div id="art_socials_m" className="art_socials_m flex sm:hidden absolute items-center justify-center -bottom-85 -left-3 hidden">
                 <div id="art_more" className=" flex flex-row gap-7 items-center justify-center w-50 h-13 sm:w-80 sm:h-17 rounded-full backdrop-blur-xl bg-[#dfd9df]/30  shadow-lg shadow-white border-[2px] border-t-white border-l-white/50 border-r-white/50 border-b-white/20 ">
                     <a target="_blank" href="https://bsky.app/profile/abiereverie.bsky.social"  className="cursor-pointer">
                             <TbBrandBluesky size={30} className="text-white/85 drop-shadow-md drop-shadow-[#360c3673]/35 hover:text-white hover:drop-shadow-md hover:drop-shadow-white transition-all duration-400 cursor-pointer"></TbBrandBluesky>
